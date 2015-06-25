@@ -29,14 +29,6 @@ public class TodoLogicTest {
         todoLogic.add(todo);
         assertEquals(1, todoLogic.getTodoCount());
     }
-
-    @Test
-    public void testGetAvailableTodos() {
-        Todo todo = new Todo(1, "title", "description", new DateTime());
-        todoLogic.add(todo);
-        assertEquals(0, todoLogic.getAvailableItems().size());
-    }
-
     @Test
     public void testRemove() {
         Todo todo = new Todo(1, "title", "description", new DateTime());

@@ -54,20 +54,6 @@ public class TodoLogic {
     }
 
     /**
-     * This function returns all the to dos they have a deadline that is after the current time.
-     * @return the available to dos
-     */
-    public List<Todo> getAvailableItems(){
-        List<Todo> availableTodos = new ArrayList<>();
-        for(Todo todo: itemList){
-            if(todo.getDeadLine().isAfter(new DateTime().getMillis())){
-                availableTodos.add(todo);
-            }
-        }
-        return availableTodos;
-    }
-
-    /**
      * This function returns the given to do from the to do list.
      * @param itemToRemove the to do item to be removed
      */
